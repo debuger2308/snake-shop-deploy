@@ -31,16 +31,16 @@ function App() {
           <Provider store={store}>
             <Header />
             <Routes>
-              <Route path="/" element={<MainPage />} />
-              <Route path="catalog" element={<Catalog />} />
+              <Route path="snake-shop-deploy/" element={<MainPage />} />
+              <Route path="snake-shop-deploy/catalog" element={<Catalog />} />
               {GoodsItems.map((item) => {
                 return <Route key={item.id} path={`/${item.id}`} element={<GoodsItemPage item={item} />} />
               })}
-              <Route path="bag" element={<Bag />} />
-              <Route path="FAQ" element={<Faq />}/>
-              <Route path="login" element={<Login />} />
-              <Route path="registr" element={<Registration />} />
-              <Route path="reviews" element={<Reviews />} />
+              <Route path="snake-shop-deploy/bag" element={<Bag />} />
+              <Route path="snake-shop-deploy/FAQ" element={<Faq />} />
+              <Route path="snake-shop-deploy/login" element={<Login />} />
+              <Route path="snake-shop-deploy/registr" element={<Registration />} />
+              <Route path="snake-shop-deploy/reviews" element={<Reviews />} />
             </Routes>
             <Footer />
           </Provider>

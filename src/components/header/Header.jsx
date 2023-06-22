@@ -27,7 +27,7 @@ const Header = () => {
 
             <div className="container">
                 <div className={isBurgerActive ? "header header--active" : "header"}>
-                    <NavLink to="/" className="header__logo" onClick={() => handleBurgerToggle(false)}>
+                    <NavLink to="snake-shop-deploy/" className="header__logo" onClick={() => handleBurgerToggle(false)}>
 
                         <img src={logo} alt="" />
                     </NavLink>
@@ -35,17 +35,17 @@ const Header = () => {
                     <div className="header__nav">
                         <NavLink
                             className={({ isActive }) => { return isActive ? "header__nav-link header__nav-link--active" : "header__nav-link" }}
-                            to="./catalog" onClick={() => handleBurgerToggle(false)}>
+                            to="snake-shop-deploy/catalog" onClick={() => handleBurgerToggle(false)}>
                             каталог
                         </NavLink>
                         <NavLink
                             className={({ isActive }) => { return isActive ? "header__nav-link header__nav-link--active" : "header__nav-link" }}
-                            to="./FAQ" onClick={() => handleBurgerToggle(false)}>
+                            to="snake-shop-deploy/FAQ" onClick={() => handleBurgerToggle(false)}>
                             FAQ
                         </NavLink>
                         <NavLink
                             className={({ isActive }) => { return isActive ? "header__nav-link header__nav-link--active" : "header__nav-link" }}
-                            to="./reviews" onClick={() => handleBurgerToggle(false)}>
+                            to="snake-shop-deploy/reviews" onClick={() => handleBurgerToggle(false)}>
                             отзывы
                         </NavLink>
 
@@ -53,10 +53,10 @@ const Header = () => {
                     </div>
 
                     <aside className="header__aside">
-                        <NavLink to="./login" className="header__login-btn" onClick={() => handleBurgerToggle(false)}>
+                        <NavLink to="snake-shop-deploy/login" className="header__login-btn" onClick={() => handleBurgerToggle(false)}>
                             Вход
                         </NavLink>
-                        <NavLink to="./bag" className="header__aside-bag" onClick={() => handleBurgerToggle(false)}>
+                        <NavLink to="snake-shop-deploy/bag" className="header__aside-bag" onClick={() => handleBurgerToggle(false)}>
                             <img src={bagIcon} alt="" className="header__bag-icon" />
                             <div className={bagCounter > 0 ? "header__bag-counter header__bag-counter--active" : "header__bag-counter"}>
                                 {bagCounter}
@@ -67,7 +67,7 @@ const Header = () => {
                 </div>
 
                 <div className="header-burger">
-                    <NavLink to="/" className="header__logo">
+                    <NavLink to="snake-shop-deploy/" className="header__logo">
 
                         <img src={logo} alt="" />
                     </NavLink>

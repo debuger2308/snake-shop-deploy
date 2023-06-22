@@ -37,7 +37,7 @@ const Login = () => {
                         />
                         <button className='auth__main-btn'>Войти</button>
                         <div className="auth__form-link">
-                            <NavLink to='/registr'>Нет аккаунта?</NavLink>
+                            <NavLink to='snake-shop-deploy/registr'>Нет аккаунта?</NavLink>
                             
                         </div>
                     </form>

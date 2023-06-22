@@ -36,7 +36,7 @@ const Bag = () => {
 
                         return (
                             <div key={index} className="bag__item">
-                                <NavLink className="bag__item-link" to={`/${item.id}`}>
+                                <NavLink className="bag__item-link" to={`snake-shop-deploy/${item.id}`}>
                                     <img src={`./goods/${item.img}`} className="bag__item-img" />
                                 </NavLink>
                                 <div className="bag__item-info">

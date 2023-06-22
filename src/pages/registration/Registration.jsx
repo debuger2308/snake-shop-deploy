@@ -90,7 +90,7 @@ const Registration = () => {
                             }
                         >Регистрация</button>
                         <div className="registr__form-link">
-                            <NavLink to='/auth'>Есть аккаунт?</NavLink>
+                            <NavLink to='snake-shop-deploy/auth'>Есть аккаунт?</NavLink>
                         </div>
                     </form>
                 </div>
