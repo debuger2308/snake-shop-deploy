@@ -29,7 +29,7 @@ const Reviews = () => {
                         {reviews.map((item) => {
                             return (
                                 <li className="reviews__list-item">
-                                    <NavLink to={"snake-shop-deploy/" + `${item.product.id}`} className="reviews__list-link">
+                                    <NavLink to={`/snake-shop-deploy/${item.product.id}`} className="reviews__list-link">
                                         <img src={`./goods/${item?.product?.img}`} className="reviews__list-img" />
                                     </NavLink>
                                     <div className="rewiews__list-info">

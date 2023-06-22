@@ -33,7 +33,7 @@ const ItemCard = ({ item }) => {
 
     return (
         <div className="itemcard">
-            <NavLink className="itemcard__link" to={`snake-shop-deploy/${item.id}`}>
+            <NavLink className="itemcard__link" to={`/snake-shop-deploy/${item.id}`}>
                 <img src={`./goods/${item.img}`} className="itemcard__img" />
                 <div className={item.sizes.length === 0 ? "itemcard__img-notification itemcard__img-notification--active" : "itemcard__img-notification"}>
                     <strong className="itemcard__img-message">{item.sizes.length === 0 ? "Нет в наличии😔" : ""}</strong>
