@@ -20,9 +20,9 @@ const Footer = () => {
                     </div>
 
                     <div className="footer__nav">
-                        <NavLink to="/catalog" className="footer__nav-link">Каталог</NavLink>
-                        <NavLink to="reviews" className="footer__nav-link">Отзывы</NavLink>
-                        <NavLink to="FAQ" className="footer__nav-link">FAQ</NavLink>
+                        <NavLink to="snake-shop-deploy/catalog" className="footer__nav-link">Каталог</NavLink>
+                        <NavLink to="snake-shop-deploy/reviews" className="footer__nav-link">Отзывы</NavLink>
+                        <NavLink to="snake-shop-deploy/FAQ" className="footer__nav-link">FAQ</NavLink>
                     </div>
                 </div>
             </div>
