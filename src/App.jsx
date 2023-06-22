@@ -21,6 +21,8 @@ import Login from "./pages/login/Login"
 import Registration from "./pages/registration/Registration"
 import Reviews from "./pages/reviews/Reviews"
 
+import ScrtollToTop from "./utils/scrollToTop"
+
 function App() {
 
 
@@ -28,6 +30,7 @@ function App() {
     <div className="app">
       <div className="wrapper">
         <Router>
+          <ScrtollToTop />
           <Provider store={store}>
             <Header />
             <Routes>
