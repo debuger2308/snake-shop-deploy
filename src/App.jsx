@@ -34,7 +34,7 @@ function App() {
               <Route path="snake-shop-deploy/" element={<MainPage />} />
               <Route path="snake-shop-deploy/catalog" element={<Catalog />} />
               {GoodsItems.map((item) => {
-                return <Route key={item.id} path={`/${item.id}`} element={<GoodsItemPage item={item} />} />
+                return <Route key={item.id} path={`snake-shop-deploy/${item.id}`} element={<GoodsItemPage item={item} />} />
               })}
               <Route path="snake-shop-deploy/bag" element={<Bag />} />
               <Route path="snake-shop-deploy/FAQ" element={<Faq />} />
