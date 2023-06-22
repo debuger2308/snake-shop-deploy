@@ -1,0 +1,114 @@
+[
+    {
+        "id": "1",
+        "title": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, repellendus!",
+        "grade": "5",
+        "product": {
+            "name": "Кроссовки Nike Air Jorda 1 mid SE",
+            "brend": "Nike",
+            "price": "1799",
+            "id": 1000101,
+            "title": "",
+            "sex": "unisex",
+            "collection": "spring",
+            "img": "nike_air_jorda_1_mid_se.jpg",
+            "sizes": "39"
+        }
+    },
+    {
+        "id": "2",
+        "title": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, repellendus!",
+        "grade": "4",
+        "product": {
+            "name": "Кеды Adidas FROZETIC",
+            "brend": "Adidas",
+            "price": "999",
+            "id": 1000110,
+            "title": "",
+            "sex": "woman",
+            "collection": "",
+            "img": "adidas_frozetic.jpg",
+            "sizes": "37 39 42 42/5"
+        }
+    },
+    {
+        "id": "3",
+        "title": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, repellendus!",
+        "grade": "4",
+        "product": {
+            "name": "Кроссовки PUMA X-Ray 2 Square Jr",
+            "brend": "PUMA",
+            "price": "1699",
+            "id": 1000103,
+            "title": "",
+            "sex": "man",
+            "collection": "spring",
+            "img": "puma_x_ray_2_squaye_jr.jpg",
+            "sizes": ""
+        }
+    },
+    {
+        "id": "4",
+        "title": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, repellendus!",
+        "grade": "5",
+        "product": {
+            "name": "Кроссовки Adidas Originals OZELIA J",
+            "brend": "Adidas",
+            "price": "1099",
+            "id": 1000104,
+            "title": "",
+            "sex": "man",
+            "collection": "spring",
+            "img": "adidas_originals_ozelia_J.jpg",
+            "sizes": "37 39 42 42/5"
+        }
+    },
+    {
+        "id": "5",
+        "title": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, repellendus!",
+        "grade": "3",
+        "product": {
+            "name": "Кеды Adidas FROZETIC",
+            "brend": "Adidas",
+            "price": "999",
+            "id": 1000110,
+            "title": "",
+            "sex": "woman",
+            "collection": "",
+            "img": "adidas_frozetic.jpg",
+            "sizes": "37 39 42 42/5"
+        }
+    },
+    {
+        "id": "6",
+        "title": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, repellendus!",
+        "grade": "5",
+        "product": {
+            "name": "Кроссовки PUMA Blaze of Glory Energ",
+            "brend": "PUMA",
+            "price": "1449",
+            "id": 1000105,
+            "title": "",
+            "sex": "man",
+            "collection": "spring",
+            "img": "puma_blaze_of_glory_energ.jpg",
+            "sizes": "37 39 42 42/5"
+        }
+    },
+    {
+        "id": "7",
+        "title": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, repellendus!",
+        "grade": "2",
+        "product": {
+            "name": "Кроссовки PUMA X-Ray Speed Lite",
+            "brend": "PUMA",
+            "price": "799",
+            "id": 1000106,
+            "title": "",
+            "sex": "man",
+            "collection": "spring",
+            "img": "puma_xray_speed_lite.jpg",
+            "sizes": "37 39 42 42/5"
+        }
+    }
+]

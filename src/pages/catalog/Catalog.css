@@ -1,0 +1,149 @@
+.catalog {}
+
+.main__catalog {}
+
+
+
+.catalog__title {
+    margin-top: 48px;
+    font-weight: 700;
+    font-size: 41px;
+    line-height: 50px;
+    color: #5B3889;
+    text-align: center;
+}
+
+.catalog__filter {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.catalog__filter-instock {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.catalog__filter-instock-svg {
+    background-color: #fff;
+    fill: #fff;
+    margin-right: 10px;
+    border: 1px solid;
+    padding: 4px;
+    border-radius: 2px;
+    transition: all .2s;
+}
+.catalog__filter-instock-svg--active {
+    fill: #5B3889;
+}
+
+.catalog__filter-brend{
+    position: relative;
+}
+
+.catalog__filter-brend-list{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    flex-direction: column;
+    left: 0;
+    width: 100%;
+}
+.catalog__filter-brend-list--active{
+    display: flex;
+}
+
+.catalog__filter-brend-item{
+    background-color: #ffffffbe;
+    padding: 5px 0;
+    border: 1px solid #5B3889;
+    font-size: 20px;
+}
+.catalog__filter-brend-item--active{
+    border: 1px solid lawngreen;
+    color: #5B3889;
+    font-weight: 600;
+}
+
+.catalog__filter-brend-btn {
+    padding: 7.5px 20px;
+    border: 1px solid #5B3889;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.catalog__filter-brend-svg {
+    margin-left: 10px;
+    transform: rotate(180deg);
+    transition: all .3s;
+}
+
+.catalog__filter-brend-svg--active {
+    transform: rotate(0deg);
+}
+
+.catalof__filter-input {
+    border: 1px solid #5B3889;
+    padding: 5px;
+    font-size: 24px;
+    color: #5B3889;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 250px;
+}
+.catalof__filter-input::placeholder{
+    opacity: 0.5;
+}
+
+.catalog__list {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(3, auto);
+    gap: 30px;
+    flex: 1 1 100%;
+}
+
+
+
+
+/*-------------ADAPTIV------------*/
+@media (max-width:750px) {
+    .catalog__filter {
+        margin: 30px 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .catalog__filter-instock{
+        order: 2;
+    }
+    .catalog__filter-brend{
+        order: 3;
+    }
+    .catalof__filter-input{
+        order: 1;
+    }
+}
+
+@media (max-width:900px) {
+    .catalog__list {
+        display: grid;
+        grid-template: repeat(3, auto) / repeat(2, auto);
+        gap: 30px;
+    }
+}
+@media (max-width:600px) {
+    .catalog__list {
+        display: grid;
+        grid-template: none;
+        gap: 30px;
+    }
+}
+

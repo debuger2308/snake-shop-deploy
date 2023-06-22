@@ -1,0 +1,15 @@
+.main__banner {}
+
+
+.banner__title {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 41px;
+    line-height: 50px;
+    color: #5B3889;
+}
+
+.banner__img {
+    margin-top: 26px;
+    width: 100%;
+}

@@ -1,0 +1,142 @@
+.bag {
+    padding: 40px 0;
+}
+
+.main__bag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bag__title {
+    font-weight: 700;
+    font-size: 41px;
+    line-height: 50px;
+    color: #5B3889;
+    text-align: center;
+}
+
+.bag__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.bag__item-img {
+    width: 200px;
+}
+
+.bag__item-info {
+    display: grid;
+    align-items: center;
+    grid-template:
+        "title title"
+        "sizes sizes"
+        "price delete";
+    gap: 10px;
+}
+
+.bag__item-name {
+    width: 350px;
+    font-weight: 400;
+    font-size: 24px;
+    grid-area: title;
+}
+
+.bag__item-sizes {
+    grid-area: sizes;
+    font-size: 20px;
+    font-weight: 600;
+    color: #5B3889;
+}
+
+.bag__item-price {
+    grid-area: price;
+}
+
+.bag__item-delete {
+    grid-area: delete;
+    margin-left: auto;
+    background-color: #000;
+    color: wheat;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.bag__item-sizes-btn {
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid #8E6CBB;
+    cursor: pointer;
+    margin: 5px;
+    color: midnightblue;
+    border-radius: 5px;
+}
+
+.bag__item-sizes-btn--active {
+    background-color: coral;
+    border: 2px solid #8E6CBB;
+    cursor: pointer;
+    margin: 5px;
+    color: azure;
+    border-radius: 5px;
+}
+
+
+.bag__foot {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.bag_order-btn {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #8E6CBB;
+    font-size: 22px;
+    line-height: 28px;
+    border: 2px solid #5B3889;
+    padding: 10px 0;
+    white-space: nowrap;
+    display: block;
+    color: #fff;
+    transition: all .3s;
+}
+.bag_order-btn:hover {
+    transform: scale(1.1);
+}
+
+
+
+.bag_delete-btn {
+    margin-top: 30px;
+    background-color: #000;
+    color: wheat;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@media (max-width:600px) {
+    .bag__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .bag__item-name {
+        width: 250px;
+        font-weight: 400;
+        font-size: 24px;
+        grid-area: title;
+    }
+    .bag__item-info {
+        margin-bottom: 10px;
+    }
+}

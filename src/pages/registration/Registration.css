@@ -1,0 +1,137 @@
+.registr {
+    margin: 120px auto 0;
+    position: relative;
+}
+
+
+.registr__form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.registr__input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 16px;
+    font-weight: 600;
+    font-size: 26.2218px;
+    line-height: 32px;
+    border: 2px  solid #fff;
+    box-shadow: 0 0 4px 1px #5B3889;
+}
+.registr__input:focus {
+    border: 2px  solid #000;
+    box-shadow: none;
+}
+.registr__input::placeholder {
+    font-weight: 600;
+    font-size: 26.2218px;
+    line-height: 32px;
+    color: #6D6D6D;
+}
+
+
+.registr__form-link {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.registr__form-link:hover {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 30px;
+
+}
+
+.registr__form-link a {
+    border-bottom: 1px solid #000;
+}
+
+.registr__form-link a:hover {
+    border-bottom: 2px solid #5B3889;
+}
+
+.registr__form--errmesage {
+    position: absolute;
+    font-size: 18px;
+    left: 50%;
+    bottom: 130px;
+    color: crimson;
+    transform: translateX(-50%);
+}
+.registr__error{
+    display: none;
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, 0%);
+    padding: 30px;
+    font-weight: 600;
+    color: crimson;
+    border: 2px solid #5B3889;
+    border-radius: 10px;
+    max-width: 400px;
+    background-color: #fff;
+}
+.registr__error--active{
+    display: block;
+}
+.registr__error-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #8d8d8d;
+}
+.registr__error-close::before{
+    content: "";
+    width: 2px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%) rotate(45deg);
+    background-color: #000;
+}
+.registr__error-close::after{
+    content: "";
+    width: 2px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%) rotate(-45deg);
+    background-color: #000;
+}
+
+.registr__main-btn{
+    margin: 64px auto 0;
+    width: 200px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    border: 2px solid #5B3889;
+    padding: 10px 22px;
+    transition: all .3s;
+    white-space: nowrap;
+    display: block;
+}
+.registr__main-btn:hover{
+    transform: scale(1.05);
+    color: #fefefe;
+    background-color: #5B3889;
+}
+@media (max-width:450px) {
+    .registr__input {
+        font-size: 18.2218px;
+    }
+
+    .registr__input::placeholder {
+        font-size: 18.2218px;
+    }
+}

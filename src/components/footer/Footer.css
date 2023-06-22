@@ -1,0 +1,60 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 60px 0;
+}
+
+.footer__support {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.footer__support-title {
+    font-weight: 600;
+    color: #5B3889;
+}
+
+.footer__support-tel {
+    margin-top: 8px;
+}
+
+.footer__support-mail {
+    margin-top: 8px;
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer__nav-link {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #5B3889;
+}
+
+.footer__nav-link:last-child {
+    margin-bottom: 0;
+}
+
+
+/*-------ADAPTIV-------*/
+
+@media (max-width:600px) {
+    .footer__nav{
+        display: none;
+    }
+    .footer__logo{
+        display: none;
+    }
+    .footer__support{
+        margin: 0 auto;
+    }
+}
