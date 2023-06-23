@@ -15,7 +15,7 @@ const Footer = () => {
                         <strong className="footer__support-title">
                             Тех. поддержка
                         </strong>
-                        <a href="tel:19998008999" className="footer__support-tel">+7-999-800-8999</a>
+                        <a href="tel:19998008999" className="footer__support-tel">+38-050-704-8935</a>
                         <a href="mailto:snakeshop@gmail.com" className="footer__support-mail">snakeshop@gmail.com</a>
                     </div>
 

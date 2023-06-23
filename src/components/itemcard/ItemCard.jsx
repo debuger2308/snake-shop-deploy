@@ -1,7 +1,7 @@
 
 import { NavLink } from "react-router-dom";
 import "./ItemCard.css"
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { changeCount } from "../../store/bagCountReducer";
 
@@ -12,16 +12,20 @@ const ItemCard = ({ item }) => {
     const dispatch = useDispatch()
 
     const itemSizes = item.sizes === undefined || item.sizes === '' ? null : item.sizes.split(' ')
+
     const [isDiplaySizes, handleDisplaySizes] = useState(false)
     const [activeSize, setActiveSize] = useState(-1)
+    const [additInfoActive, setAdditInfoActive] = useState(false)
+
     const activeSizeBtn = 'itemcard__size-item--active itemcard__size-item'
     const nonActiveSizeBtn = 'itemcard__size-item'
+
 
     function addToBag(item) {
         const bagItems = 'bagItems'
         let currentValueLCStorage = localStorage.getItem(bagItems)
         item.chosenSize = item.sizes.split(' ')[activeSize]
-    
+
         if (JSON.parse(localStorage.getItem(bagItems)) === null) {
             localStorage.setItem(bagItems, JSON.stringify([item]))
         }
@@ -76,25 +80,33 @@ const ItemCard = ({ item }) => {
 
                 <button
                     className={activeSize >= 0 ? "itemcard__sizes-addtobag-btn itemcard__sizes-addtobag-btn--active" : "itemcard__sizes-addtobag-btn"}
-                    onClick={()=>{
-                        if(activeSize >= 0){
+                    onClick={() => {
+                        if (activeSize >= 0) {
                             addToBag(item)
                             handleDisplaySizes(false)
                             dispatch(changeCount(JSON.parse(localStorage.getItem('bagItems'))))
+                            setAdditInfoActive(true)
+                            setTimeout(() => {
+                                setAdditInfoActive(false)
+                            }, 1000);
                         }
                     }}
                 >
                     Добавить
                 </button>
 
-                <button 
-                onClick={()=>{
-                    handleDisplaySizes(false)
-                }}
-                className="itemcard__sizrs-close-btn">
-                    
+                <button
+                    onClick={() => {
+                        handleDisplaySizes(false)
+                    }}
+                    className="itemcard__sizrs-close-btn">
+
                 </button>
             </div>
+
+            <button className={additInfoActive ? "itemcard__additional-info-btn itemcard__additional-info-btn--active" : "itemcard__additional-info-btn"}>
+                Добавлено !
+            </button>
         </div>
     );
 }

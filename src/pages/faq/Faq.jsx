@@ -23,7 +23,7 @@ const Faq = () => {
                         </li>
                         <li className="main__list-item">
                             <h1 className="main__item-title">Возможен ли возврат?</h1>
-                            <p className={accItem === 2 ? "main__item-subtitle main__item-subtitle--active" : "main__item-subtitle"}>Да, возврат возможет в течении14 дней если товар был не испорчен самим заказчиком </p>
+                            <p className={accItem === 2 ? "main__item-subtitle main__item-subtitle--active" : "main__item-subtitle"}>Да, возврат возможет в течении 14 дней, если товар был не испорчен самим заказчиком </p>
                             <button
                                 onClick={() => { accItem === 2 ? setAccItem(0) : setAccItem(2) }}
                                 className={accItem === 2 ? 'main__item-btn main__item-btn--active' : 'main__item-btn'}></button>

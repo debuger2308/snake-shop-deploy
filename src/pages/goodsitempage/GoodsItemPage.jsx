@@ -7,11 +7,13 @@ import { useDispatch } from "react-redux";
 const GoodsItemPage = ({ item }) => {
     const dispatch = useDispatch()
 
+
+
     function addToBag(item) {
         const bagItems = 'bagItems'
         let currentValueLCStorage = localStorage.getItem(bagItems)
         item.chosenSize = item.sizes.split(' ')[activeSize]
-    
+
         if (JSON.parse(localStorage.getItem(bagItems)) === null) {
             localStorage.setItem(bagItems, JSON.stringify([item]))
         }
@@ -21,9 +23,13 @@ const GoodsItemPage = ({ item }) => {
     }
 
     const itemSizes = item.sizes === undefined || item.sizes === '' ? null : item.sizes.split(' ')
+
     const [activeSize, setActiveSize] = useState(-1)
+    const [additInfoActive, setAdditInfoActive] = useState(false)
+
     const activeSizeBtn = 'goods__size-item--active goods__size-item'
     const nonActiveSizeBtn = 'goods__size-item'
+
     return (
         <main className="goodsitem">
             <div className="container">
@@ -75,18 +81,27 @@ const GoodsItemPage = ({ item }) => {
                         </div>
 
 
-                        
+                        <div className="goodsitem__tobag-btns">
+                            <button
+                                onClick={(e) => {
+                                    if (activeSize >= 0) {
+                                        addToBag(item)
+                                        dispatch(changeCount(JSON.parse(localStorage.getItem('bagItems'))))
+                                        setAdditInfoActive(true)
+                                        setTimeout(() => {
+                                            setAdditInfoActive(false)
+                                        }, 1000);
+                                    }
+                                }}
+                                className={activeSize >= 0 ? "goodsitem__tobag-btn goodsitem__tobag-btn--active" : "goodsitem__tobag-btn"}>
+                                В корзину
+                            </button>
+                            <button className={additInfoActive ? "goodsitem__tobag-addit-btn goodsitem__tobag-addit-btn--active" : "goodsitem__tobag-addit-btn"}>
+                                Добавлено !
+                            </button>
+                        </div>
 
-                        <button
-                            onClick={() => {
-                                if (activeSize >= 0) {
-                                    addToBag(item)
-                                    dispatch(changeCount(JSON.parse(localStorage.getItem('bagItems'))))
-                                }
-                            }}
-                            className={activeSize >= 0?"goodsitem__tobag-btn goodsitem__tobag-btn--active":"goodsitem__tobag-btn"}>
-                            В корзину
-                        </button>
+
 
                         <p className="goodsitem__delinfo">
                             По адресу, курьером — с примеркой, бесплатно при покупке от 4 500 ₴

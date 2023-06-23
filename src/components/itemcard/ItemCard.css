@@ -84,9 +84,11 @@
     height: 100%;
     background-color: #ffffff8c;
 }
-.itemcard__sizes--active{
+
+.itemcard__sizes--active {
     display: block;
 }
+
 .itemcard__sizes-title {
     flex: 1 0 100%;
     font-size: 24px;
@@ -115,7 +117,7 @@
     border-radius: 5px;
 }
 
-.itemcard__sizes-addtobag-btn{
+.itemcard__sizes-addtobag-btn {
     width: 100%;
     background-color: #b0b0b0;
     font-size: 22px;
@@ -130,11 +132,12 @@
     left: 0;
     transition: all .3s;
 }
-.itemcard__sizes-addtobag-btn--active{
+
+.itemcard__sizes-addtobag-btn--active {
     background-color: #8E6CBB;
 }
 
-.itemcard__sizrs-close-btn{
+.itemcard__sizrs-close-btn {
     position: relative;
     width: 32px;
     height: 32px;
@@ -145,7 +148,7 @@
     border-radius: 4px;
 }
 
-.itemcard__sizrs-close-btn::before{
+.itemcard__sizrs-close-btn::before {
     content: "";
     display: block;
     width: 30px;
@@ -156,7 +159,8 @@
     position: absolute;
     transform: translate(50%, -50%) rotate(45deg);
 }
-.itemcard__sizrs-close-btn::after{
+
+.itemcard__sizrs-close-btn::after {
     content: "";
     display: block;
     width: 30px;
@@ -166,4 +170,22 @@
     right: 50%;
     position: absolute;
     transform: translate(50%, -50%) rotate(-45deg);
+}
+
+.itemcard__additional-info-btn {
+    display: none;
+    width: 100%;
+    background-color: olivedrab;
+    font-size: 22px;
+    line-height: 28px;
+    border: 2px solid #5B3889;
+    padding: 10px 0;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+}
+.itemcard__additional-info-btn--active{
+    display: block;
 }
