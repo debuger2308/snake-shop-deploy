@@ -1,9 +1,7 @@
-.faq{
-    background-color: #e5e5e5;
-}
+
 .main__faq {
     max-width: 700px;
-    margin: 50px auto;
+    margin: 30px auto;
 }
 .main__faq-list {
 }
@@ -20,11 +18,12 @@
     margin-right: 60px;
 }
 .main__item-subtitle {
+    margin-top: 10px;
     font-size: 20px;
     margin-right: 60px;
     opacity: 0;
     height: 0;
-    color: coral;
+    color: #6e39b3;
 }
 .main__item-subtitle--active {
     opacity: 1;
@@ -47,7 +46,7 @@
     left: 50%;
     width: 30px;
     height: 2px;
-    background-color: coral;
+    background-color: cornflowerblue;
     transform: translate(-50%,-50%);
     
 }
@@ -58,7 +57,7 @@
     left: 50%;
     width: 30px;
     height: 2px;
-    background-color: coral;
+    background-color:cornflowerblue;
     transform: translate(-50%,-50%) rotate(90deg);
     transition: all .3s;
 }

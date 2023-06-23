@@ -114,37 +114,42 @@
 .header__burger{
     position: fixed;
     display: none;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     right: 33px;
     top: 53px;
     transform: translateY(-50%);
     z-index: 4;
-    background-color: #ffffff77;
+    background-color: #ffffffd7;
+    border-radius: 50px;
+    border: 1px solid #0000005b;
 }
 .header__burger-span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: block;
-    width: 100%;
+    width: 40px;
     height: 4px;
     background-color: #5B3889;
     border-radius: 3px;
 }
 .header__burger-span::after{
     position: absolute;
-    top: 5px;
+    top: 12px;
     content: "";
     display: block;
-    width: 100%;
+    width: 40px;
     height: 4px;
     background-color: #5B3889;
     border-radius: 3px;
 }
 .header__burger-span::before{
     position: absolute;
-    bottom: 5px;
+    bottom: 12px;
     content: "";
     display: block;
-    width: 100%;
+    width: 40px;
     height: 4px;
     background-color: #5B3889;
     border-radius: 3px;
